@@ -21,8 +21,8 @@ projectM is a reimplementation of Milkdrop under OpenGL. This is a
 plugin for libvisual visualization library.
 
 %description -l pl.UTF-8
-projectM jest reimplementacją projektu Milkdrop na OpenGL. To jest
-plugin dla biblioteki wizualizacji libvisual.
+projectM jest reimplementacją projektu Milkdrop na OpenGL. Ten pakiet
+zawiera wtyczkę dla biblioteki wizualizacji libvisual.
 
 %prep
 %setup -q -n %{_name}-%{version}
