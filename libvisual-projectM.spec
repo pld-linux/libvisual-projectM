@@ -13,7 +13,7 @@ Source0:	http://dl.sourceforge.net/projectm/%{_name}-%{version}.tar.bz2
 URL:		http://projectm.sourceforge.net/
 BuildRequires:	SDL-devel
 BuildRequires:	cmake
-BuildRequires:	libprojectM-devel >= %{version}
+BuildRequires:	libprojectM-devel >= 1:%{version}
 BuildRequires:	libvisual-devel = 0.4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
