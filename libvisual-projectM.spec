@@ -4,12 +4,12 @@
 Summary:	ProjectM plugin for libvisual
 Summary(pl.UTF-8):	Wtyczka ProjectM dla libvisual
 Name:		libvisual-projectM
-Version:	1.1
-Release:	2
+Version:	1.2.0
+Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/projectm/%{_name}-%{version}.tar.bz2
-# Source0-md5:	c87035b0d7307e04424d8c64c2601a23
+# Source0-md5:	41a90c5b8931a2cfcdd406eca89e83f9
 URL:		http://projectm.sourceforge.net/
 BuildRequires:	SDL-devel
 BuildRequires:	cmake
