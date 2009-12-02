@@ -14,7 +14,9 @@ URL:		http://projectm.sourceforge.net/
 BuildRequires:	SDL-devel
 BuildRequires:	cmake
 BuildRequires:	libprojectM-devel >= 1:%{version}
+BuildRequires:	libstdc++-devel
 BuildRequires:	libvisual-devel = 0.4.0
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
