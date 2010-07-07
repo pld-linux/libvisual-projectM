@@ -1,19 +1,16 @@
-#
-%define		_name		projectM-libvisual
-#
 Summary:	ProjectM plugin for libvisual
 Summary(pl.UTF-8):	Wtyczka ProjectM dla libvisual
 Name:		libvisual-projectM
-Version:	1.2.0
+Version:	2.0.1
 Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/projectm/%{_name}-%{version}.tar.bz2
-# Source0-md5:	41a90c5b8931a2cfcdd406eca89e83f9
+Source0:	http://downloads.sourceforge.net/project/projectm/%{version}/projectM_libvisual-%{version}-Source.tar.gz
+# Source0-md5:	35e09b09210d48b437e3574bd00b15a8
 URL:		http://projectm.sourceforge.net/
 BuildRequires:	SDL-devel
 BuildRequires:	cmake
-BuildRequires:	libprojectM-devel >= 1:%{version}
+BuildRequires:	libprojectM-devel >= 1:1.2.0
 BuildRequires:	libstdc++-devel
 BuildRequires:	libvisual-devel = 0.4.0
 BuildRequires:	pkgconfig
@@ -28,18 +25,19 @@ projectM jest reimplementacją projektu Milkdrop na OpenGL. Ten pakiet
 zawiera wtyczkę dla biblioteki wizualizacji libvisual.
 
 %prep
-%setup -q -n %{_name}-%{version}
+%setup -q -n projectM_libvisual-%{version}-Source
 
 %build
+install -d build
+cd build
 %cmake \
 	-DCMAKE_INSTALL_PREFIX=%{_prefix} \
-	.
+	..
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-%{__make} install \
+%{__make} -C build install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
