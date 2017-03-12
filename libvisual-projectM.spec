@@ -1,8 +1,11 @@
+
+Obsolete packaga,e all projectM plugins are build now from libprojectM
+
 Summary:	ProjectM plugin for libvisual
 Summary(pl.UTF-8):	Wtyczka ProjectM dla libvisual
 Name:		libvisual-projectM
 Version:	2.0.1
-Release:	1
+Release:	1.1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/project/projectm/%{version}/projectM_libvisual-%{version}-Source.tar.gz
